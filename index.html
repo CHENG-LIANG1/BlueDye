@@ -5,29 +5,27 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>印蓝花布</title>
-        <link rel="stylesheet" type="text/css" href="./styles/home_styles.css" />
+        <title>蓝印花布</title>
+        <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
 
     </head>
+    <bgsound src="./asset/bgmusic.mp3" loop="infinite"> </bgsound>
 
+    <body class="home">
+    
+        <!-- 背景音乐 -->
+        <audio src="./asset/bgmusic.mp3" autoplay loop></audio>
 
-    <body>
-    <!-- 
-        <audio src="./asset/bgmusic.mp3" autoplay loop controls></audio> -->
+        <!-- 回到顶部 -->
+        <button onclick="topFunction()" id="backToTop" title="Back to top">回到顶部</button>
 
-
-
+        <!-- 导航栏 -->
         <nav>
-            <a href="#"><img class="logo" src="./asset/logo.png" alt="蓝印花布logo"> </a>
-
+            <a href="./index.html"><img class="logo" src="./asset/logo.png" alt="蓝印花布logo"> </a>
            <ul>
-                <li >
-                    <a  href="#" class="active">首页</a>
-                     
-                </li>
-                <li><a class="nav-links" href="#">购买</a></li>
-                <li><a class="nav-links" href="#">购买</a></li>
-                <li><a class="nav-links" href="#">购买</a></li>
+                <li ><a  href="./index.html" class="active">首页</a></li>
+                <li><a class="nav-links" href="./doukou.html">豆蔻记</a></li>
+                <li><a class="nav-links" href="#">关于我们</a></li>
                 <li><a class="nav-links" href="#">联系我们</a></li>
                
             </ul>
@@ -37,9 +35,8 @@
 
 
 
-        <article>
-
-            <h1>蓝印花布   中国传统工艺印染品</h1>
+        <div class="main">
+            <h1>蓝印花布——中国传统工艺印染品</h1>
             <div class="product-list">
             
                 <div class="product">
@@ -68,41 +65,106 @@
             <div class="history">
                 <p>蓝印花布源于秦汉，兴盛于商业发达的唐宋时期，《古今图书集成》卷中记载:"药斑布--以布抹灰药而染青，候干，去灰药，则青白相间，有人物、花鸟、诗词各色，充衾幔之用。" </p> 
                 <br>
+                <br>
                 <p>在资本主义萌芽的明清之际，药斑布已普遍流行于民间，所以《古今图书集成》物产考曰:"药斑布俗名浇花布，今所在皆有之。"《光绪通州志》记载:"种蓝成畦，五月刈曰头蓝，
                 七月刈曰二蓝甓一池水，汲水浸入石灰，搅千下，戽去水，即成靛，用以染布，曰小缸青。"</p> 
+                <br>
                 <br>
 
                 <P>现代所见蓝印花布的样式，多数为明清一代的作品。这些以蓝印花布制成的蚊帐、被面、包袱、头巾、
                     门帘等生活用品，朴素大方、色调清新明快，图案淳朴典丽，曾深受欢迎。因此，染坊业一度成为地方上的显业。</P>
                 <br>
+                <br>
+                
                 <p>史载宋元之际桐乡蓝印花布极为繁荣，形成了:织机遍地，染坊连街、河上布船如织的壮观景象，其中，石门(古称玉溪)的"丰同裕"、
                     "泰森"等染坊店一时成为行业中的翘楚。所制"瑞鹤鸣祥"、"岁寒三友""梅开五富"、"榴开百子"等久负盛名。</p>
                 <br>
             </div>
-            
-        
 
 
-        </article>
+            <h1>热销产品</h1>
+            <div class="tbl-container">
+                <div class="tbl-header">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                      <tr>
+                        <th>产品名称</th>
+                        <th>产品特色</th>
+                        <th>价格</th>
+
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div class="tbl-content">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                      <tr>
+                        <td>蓝印花布1</td>
+                        <td>好看</td>
+                        <td>138 元</td>
+                      </tr>
+                      <tr>
+                        <td>蓝印花布2</td>
+                        <td>耐用</td>
+                        <td>238 元</td>
+                      </tr>
+                      <tr>
+                        <td>蓝印花布3</td>
+                        <td>实用</td>
+                        <td>322 元</td>
+                      </tr>
+                      <tr>
+                        <td>蓝印花布4</td>
+                        <td>便宜</td>
+                        <td>102 元</td>
+                      </tr>
+                      <tr>
+                        <td>蓝印花布5</td>
+                        <td>性价比</td>
+                        <td>138 元</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+
+        </div>
 
         <hr>
+
+
     <footer>
             <p>
              上海商学院 ｜ 艺术设计学院｜视觉传达设计191班
             </p>
             <p>
-            版权所有: 王孝钰 18407040117
+                &copy; 版权所有: 王孝钰 18407040117
             </p>
     </footer>
 
-
-        
-
-        
-
-
-
     </body>
+
+
+    <script>
+        let mybutton = document.getElementById("backToTop");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 
 
